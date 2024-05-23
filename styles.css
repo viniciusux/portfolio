@@ -1,51 +1,75 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
 }
 
 .container {
-    background-color: white;
-    padding: 2em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1000px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.left-column, .right-column {
+    padding: 20px;
 }
 
-header p {
-    margin: 0.5em 0 1em 0;
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-column h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.left-column ul {
+    list-style-type: none;
+}
+
+.left-column ul li {
+    margin-bottom: 0.5em;
+}
+
+.left-column ul li a {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2em;
-    color: #666;
 }
 
-section p {
-    font-size: 1em;
-    color: #333;
-    margin: 1em 0;
+.left-column ul li a:hover {
+    text-decoration: underline;
 }
 
-footer p {
-    font-size: 0.9em;
-    color: #999;
-    margin: 0.5em 0;
+.contact {
+    margin-top: 2em;
+    font-size: 1.1em;
 }
 
-footer a {
-    color: #0066cc;
+.contact a {
+    color: #fff;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.right-column {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
