@@ -27,6 +27,7 @@ body {
 .name-container {
     height: 48px;
     width: 477px;
+    margin-bottom: 96px; /* Space between the name and the description */
 }
 
 h1 {
@@ -34,10 +35,11 @@ h1 {
     line-height: 48px;
     letter-spacing: -0.6px;
     margin: 0;
+    font-weight: 300; /* Light font weight */
 }
 
 .links-container {
-    height: 288px;
+    height: 336px;
     width: 744px;
     margin-top: 420px; /* Distance from the title */
 }
@@ -95,4 +97,13 @@ h1 {
     line-height: 48px;
     letter-spacing: -0.6px;
     margin: 0;
+}
+
+.hover-link {
+    color: white;
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: #666666;
 }
