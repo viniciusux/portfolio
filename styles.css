@@ -87,9 +87,13 @@ h1 {
 }
 
 .about-container {
-    height: 432px;
-    width: 636px;
+    height: 528px;
+    width: 740px;
     margin: 48px; /* Margin around the about text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .about-container p {
@@ -97,6 +101,7 @@ h1 {
     line-height: 48px;
     letter-spacing: -0.6px;
     margin: 0;
+    font-weight: 300; /* Light font weight */
 }
 
 .hover-link {
