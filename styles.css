@@ -29,9 +29,8 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 50%;
-    height: 100%;
 }
 
 h1 {
@@ -39,29 +38,22 @@ h1 {
     margin-bottom: 48px;
 }
 
-.links a {
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.links a, .contact h2, .contact a {
     display: block;
-    margin-bottom: 48px;
+    height: 48px;
+    line-height: 48px;
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.links a:hover {
-    color: #666666;
-}
-
-.contact h2 {
-    margin-bottom: 24px;
-}
-
-.contact a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.contact a:hover {
+.links a:hover, .contact a:hover {
     color: #666666;
 }
 
