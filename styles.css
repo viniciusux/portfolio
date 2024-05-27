@@ -1,115 +1,81 @@
-body {
+/* CSS reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300; /* Light font weight */
-    background-color: black;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    padding: 48px; /* Margin around the content */
-    box-sizing: border-box; /* Include padding in the width and height */
+    justify-content: space-between;
+    padding: 48px;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
-.left, .right {
-    flex: 1;
+.info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.name-container {
-    height: 48px;
-    width: 477px;
-    margin-bottom: 96px; /* Space between the name and the description */
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.6px;
-    margin: 0;
-    font-weight: 300; /* Light font weight */
+    font-weight: 300;
+    margin-bottom: 48px;
 }
 
-.links-container {
-    height: 336px;
-    width: 744px;
-    margin-top: 420px; /* Distance from the title */
-}
-
-.links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links li {
-    height: 48px;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.6px;
-}
-
-.links li a {
+.links a {
+    display: block;
+    margin-bottom: 48px;
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.links li a:hover {
+.links a:hover {
     color: #666666;
 }
 
-.contact {
-    margin-top: 48px; /* Margin between the links and the "Get in touch" */
-}
-
-.contact p {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.6px;
-    margin: 0;
+.contact h2 {
+    margin-bottom: 24px;
 }
 
 .contact a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .contact a:hover {
     color: #666666;
 }
 
-.about-container {
+.description {
     width: 740px;
     height: 528px;
-    margin: 48px 56px 48px 48px; /* Top, right, bottom, left */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 48px;
+    box-sizing: border-box;
 }
 
-.about-container p {
+.description p {
+    font-weight: 300;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.6px;
     margin: 0;
-    font-weight: 300; /* Light font weight */
-    width: 1680px; /* Width of the text */
-    text-align: left; /* Align text to the left */
-}
-
-.hover-link {
-    color: white;
-    text-decoration: none;
-}
-
-.hover-link:hover {
-    color: #666666;
 }
