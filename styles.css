@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400; /* Regular font weight */
+    font-weight: 300; /* Light font weight */
     background-color: black;
     color: white;
     display: flex;
@@ -24,12 +24,9 @@ body {
     justify-content: center;
 }
 
-.left {
-    padding-right: 48px; /* Ensure alignment with margin */
-}
-
-.right {
-    padding-left: 48px; /* Ensure alignment with margin */
+.name-container {
+    height: 48px;
+    width: 477px;
 }
 
 h1 {
@@ -39,22 +36,28 @@ h1 {
     margin: 0;
 }
 
+.links-container {
+    height: 288px;
+    width: 744px;
+    margin-top: 420px; /* Distance from the title */
+}
+
 .links {
     list-style-type: none;
     padding: 0;
-    margin: 48px 0; /* Margin between the name and the links */
+    margin: 0;
 }
 
 .links li {
-    margin: 0;
+    height: 48px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
 }
 
 .links li a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.6px;
 }
 
 .links li a:hover {
@@ -69,20 +72,27 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.6px;
-}
-
-.right p {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.6px;
     margin: 0;
 }
 
-.right a {
+.contact a {
     color: white;
     text-decoration: none;
 }
 
-.right a:hover {
+.contact a:hover {
     color: #666666;
+}
+
+.about-container {
+    height: 432px;
+    width: 636px;
+    margin: 48px; /* Margin around the about text */
+}
+
+.about-container p {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
+    margin: 0;
 }
