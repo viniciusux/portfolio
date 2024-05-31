@@ -24,28 +24,45 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 50%;
     height: 100%;
     position: sticky;
-    top: 0;
+    bottom: 48px;
 }
 
 .name {
     margin-bottom: 48px;
 }
 
-.links, .contact {
+.links {
     margin-bottom: 48px;
 }
 
-.links div, .contact div {
+.links .link,
+.contact .link {
     height: 48px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #666666;
+}
+
+.contact {
+    margin-bottom: 48px;
 }
 
 .description {
     width: 50%;
-    padding: 48px;
+    padding: 0 48px 48px 48px;
 }
 
 .description p {
