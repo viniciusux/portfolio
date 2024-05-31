@@ -16,57 +16,42 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 48px;
     height: 100vh;
+    padding: 48px;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
-}
-
-.extra-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 50%;
-    height: 100%;
-    position: sticky;
-    bottom: 48px;
+.header {
+    margin-bottom: 420px;
 }
 
 .name {
     margin-bottom: 48px;
 }
 
-.links {
-    margin-bottom: 48px;
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .links .link,
-.contact .link {
+.contact .link,
+.hover-effect {
     height: 48px;
     transition: color 0.3s ease;
 }
 
-.link:hover {
+.link:hover,
+.hover-effect:hover {
     color: #666666;
 }
 
 .contact {
-    margin-bottom: 48px;
+    margin-top: 48px;
 }
 
 .description {
-    width: 50%;
     padding: 0 48px 48px 48px;
-}
-
-.description p {
-    max-width: 740px;
-    height: 528px;
-    margin: 0;
 }
