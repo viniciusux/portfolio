@@ -23,11 +23,14 @@ body {
 
 .left-column {
     width: 50%;
+    height: 100vh;
     box-sizing: border-box;
     padding: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .left-column h1 {
@@ -64,33 +67,4 @@ body {
 }
 
 .contact p {
-    font-size: 40px;
-    line-height: 48px;
-    margin: 0;
-    font-weight: 300; /* Ensure light font weight */
-}
-
-.contact a {
-    font-size: 40px;
-    line-height: 48px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300; /* Ensure light font weight */
-}
-
-.right-column {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 1.2em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.right-column p {
-    width: 636px;
-    height: 432px;
-    font-size: 40px;
-    line-height: 48px;
-    margin: 0;
-}
+    font-size: 
