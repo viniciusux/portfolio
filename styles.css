@@ -1,79 +1,96 @@
+/* styles.css */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Light', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
     background-color: #000;
     color: #fff;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+
 .container {
     display: flex;
-    flex-direction: row;
-    width: 80%;
+    width: 100%;
+    padding: 1.2em;
 }
+
 .left-column {
     width: 50%;
-    height: 100vh;
     box-sizing: border-box;
-    padding: 48px;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-     h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 48px;
-      border: 0;
-     } 
-  .contact {
-     h1 {
-      font-size: 48px;
-     } 
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
 }
-.right-column {
-    display: flex;
-    flex-direction: column;
-    width: 740px;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 48px 56px 48px 48px;
-    margin-bottom: 192px;
-    p {
-    font-size: 48px;
-    line-height: 1.5em;
+
+.left-column h1 {
+    font-size: 40px;
+    line-height: 48px;
     margin: 0;
     padding: 0;
-    }
 }
-h1 {
-    font-size: 3em;
-    margin-bottom: 1em;
-}
-ul {
+
+.social-links {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-ul li {
+
+.social-links li {
     margin-bottom: 0.5em;
 }
-ul li a {
+
+.social-links li a {
+    font-size: 40px;
+    line-height: 48px;
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
 }
-ul li a:hover {
+
+.social-links li a:hover {
     color: #666666;
 }
+
 .contact {
-    margin-top: 2em;
+    margin-top: 1.2em;
+}
+
+.contact p {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    font-weight: 300; /* Ensure light font weight */
+}
+
+.contact a {
+    font-size: 40px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300; /* Ensure light font weight */
+}
+
+.right-column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-column p {
+    width: 636px;
+    height: 432px;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
 }
